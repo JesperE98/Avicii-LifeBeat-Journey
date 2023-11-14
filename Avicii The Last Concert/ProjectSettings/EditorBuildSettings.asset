@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Anthony/scenes/Avicii room 1.unity
     guid: 1d0d1f1be2a24a34aaea2b1d03383ba5
+  - enabled: 1
+    path: Assets/Anthony/scenes/Avicii room1.2.unity
+    guid: 8484739db033e0a4ca95b9ed222b2de5
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a1104fad63a60414c8d5901f9aff6371, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f642718a3afa9d047b3e68cc5bad8263, type: 2}
