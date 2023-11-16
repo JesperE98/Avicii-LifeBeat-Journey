@@ -4,8 +4,9 @@ public class AudioManager : MonoBehaviour
 {
     
     [SerializeField]
-    private AudioSource[] m_AudioSources;
-
+    protected AudioSource[] m_AudioSources;
+    [SerializeField]
+    protected int m_AudioTrackNumber;
 
     private void Awake()
     {
@@ -13,7 +14,12 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlayAudioTrack(int audioTrackNumber)
-    {
+    {       
         m_AudioSources[audioTrackNumber].Play();
+    }
+
+    public void StopAudioTrack(int audioTrackNumber)
+    {
+        m_AudioSources[audioTrackNumber].Stop();
     }
 }
