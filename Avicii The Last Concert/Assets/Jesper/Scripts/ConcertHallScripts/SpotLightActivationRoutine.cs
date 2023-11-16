@@ -19,6 +19,8 @@ public class SpotLightActivationRoutine : AudioManager
     private int m_AudioTrackNumber;
 
     private AudioManager m_AudioManager;
+    private BoxCollider concertTriggerTwoCollider;
+    private BoxCollider concertTriggerThreeCollider;
     private void Awake()
     {
         foreach (GameObject spotLights in m_SpotLights)
@@ -27,34 +29,44 @@ public class SpotLightActivationRoutine : AudioManager
         }
 
         m_AudioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        concertTriggerTwoCollider = GameObject.Find("ConcertTriggerTwo").GetComponent<BoxCollider>();
+        concertTriggerThreeCollider = GameObject.Find("ConcertTriggerThree").GetComponent<BoxCollider>();
     }
 
     void Start()
     {
         //StartCoroutine(SpotLightActivation());
+
+        if (concertTriggerTwoCollider == null)
+        {
+            Debug.Log("Concert Trigger Two is NULL");
+        }
+
+        if (concertTriggerThreeCollider == null)
+        {
+            Debug.Log("Concert Trigger Two is NULL");
+        }
     }
 
     public void ConcertSetup()
     {
 
-        if (m_ConcertTriggerOne != false)
+        if (m_ConcertTriggerOne != false && m_ConcertTriggerTwo != true && m_ConcertTriggerThree != true)
         {
             // Spelaren aktivera testet av spotlightsen
 
             print("One");
-            m_SpotLights[9].SetActive(true);
-
-            BoxCollider concertTriggerTwoCollider = GameObject.Find("ConcertTriggerTwo").GetComponent<BoxCollider>();
+            m_SpotLights[8].SetActive(true);          
             concertTriggerTwoCollider.enabled = true;
         }
 
-        if (m_ConcertTriggerOne != false && m_ConcertTriggerTwo != false)
+        if (m_ConcertTriggerOne != false && m_ConcertTriggerTwo != false && m_ConcertTriggerThree != true)
         {
             print("Two");
-            m_SpotLights[9].SetActive(false);
-            m_SpotLights[8].SetActive(true);
+            m_SpotLights[8].SetActive(false);
+            m_SpotLights[7].SetActive(true);
 
-            BoxCollider concertTriggerThreeCollider = GameObject.Find("ConcertTriggerThree").GetComponent<BoxCollider>();
+            
             concertTriggerThreeCollider.enabled = true;
         }
 
@@ -63,7 +75,7 @@ public class SpotLightActivationRoutine : AudioManager
             // Spelaren startar konsären
 
             print("Three");
-            m_SpotLights[8].SetActive(false);
+            m_SpotLights[7].SetActive(false);
             m_AudioManager.PlayAudioTrack(m_AudioTrackNumber);
             StartCoroutine(SpotLightActivation());        
         }

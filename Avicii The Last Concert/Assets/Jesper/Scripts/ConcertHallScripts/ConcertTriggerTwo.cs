@@ -26,8 +26,9 @@ public class ConcertTriggerTwo : MonoBehaviour
         if (other.tag == "Player")
         {
             m_SpotLightActivationRoutine.m_ConcertTriggerTwo = true;
-            m_SpotLightActivationRoutine.ConcertSetup();
             m_ConcertTriggerTwoCollider.enabled = false;
+            m_SpotLightActivationRoutine.ConcertSetup();
+            
         }
     }
 }

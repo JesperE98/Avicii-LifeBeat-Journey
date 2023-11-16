@@ -22,8 +22,9 @@ public class ConcertTrigger : MonoBehaviour
         {
             Debug.Log("Activated routine one");
             m_SpotLightActivationRoutine.m_ConcertTriggerOne = true;
-            m_SpotLightActivationRoutine.ConcertSetup();
             m_ConcertTriggerOneCollider.enabled = false;
+            m_SpotLightActivationRoutine.ConcertSetup();
+            
         }
     }
 }
