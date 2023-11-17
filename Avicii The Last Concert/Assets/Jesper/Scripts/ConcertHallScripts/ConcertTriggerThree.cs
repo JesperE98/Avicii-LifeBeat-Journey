@@ -1,27 +1,31 @@
 using UnityEngine;
 
-public class ConcertTriggerThree : MonoBehaviour
+namespace ConcertHallScripts
 {
-    private BoxCollider m_BoxCollider;
-    private SpotLightActivationRoutine m_SpotLightActivationRoutine;
-
-    private void Awake()
+    public class ConcertTriggerThree : MonoBehaviour
     {
-        m_BoxCollider = GetComponent<BoxCollider>();
-        m_SpotLightActivationRoutine = GameObject.Find("LightShow").GetComponent<SpotLightActivationRoutine>();
-    }
+        private BoxCollider m_BoxCollider;
+        private SpotLightActivationRoutine m_SpotLightActivationRoutine;
 
-    private void Start()
-    {
-        m_BoxCollider.enabled = false;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
+        private void Awake()
         {
-            m_SpotLightActivationRoutine.m_ConcertTriggerThree = true;
-            m_SpotLightActivationRoutine.ConcertSetup();
+            m_BoxCollider = GetComponent<BoxCollider>();
+            m_SpotLightActivationRoutine = GameObject.Find("LightShow").GetComponent<SpotLightActivationRoutine>();
+        }
+
+        private void Start()
+        {
+            m_BoxCollider.enabled = false;
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.tag == "Player")
+            {
+                m_SpotLightActivationRoutine.m_ConcertTriggerThree = true;
+                m_SpotLightActivationRoutine.ConcertSetup();
+            }
         }
     }
 }
+
