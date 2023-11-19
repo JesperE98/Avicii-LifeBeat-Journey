@@ -22,7 +22,7 @@ public class Monitor : MonoBehaviour
     private void Start()
     {
         _ButtonDestroyed = GetComponent<BlinkingAndDestroy>();
-        audioSource = GameObject.Find("phone").GetComponent<AudioSource>();
+        audioSource = GameObject.Find("Smartphone").GetComponent<AudioSource>();
         
     }
     void Update()
