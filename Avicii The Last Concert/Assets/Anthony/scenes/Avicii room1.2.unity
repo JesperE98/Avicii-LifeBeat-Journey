@@ -8021,7 +8021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeOnStart: 1
-  fadeDuration: 2
+  fadeDuration: 10
   fadeColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &5272241609245554879
 Transform:
@@ -8114,6 +8114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b122eb781d5c4a4aa263be98741591d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeScreen: {fileID: 5252991963987654442}
+  m_LoadSceneIndex: 2
   m_Timer: 11
 --- !u!1 &5845295813095281212
 GameObject:
@@ -9881,7 +9883,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9031091416490921525
 Transform:
   m_ObjectHideFlags: 0
