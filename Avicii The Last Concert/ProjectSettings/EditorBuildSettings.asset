@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Anthony/scenes/Avicii room 1.unity
     guid: 1d0d1f1be2a24a34aaea2b1d03383ba5
   - enabled: 1
-    path: Assets/Leon/Hotel Room.unity
+    path: Assets/Leon/Hotel Room/Hotel Room.unity
     guid: cb471526710227549a36a32924f5283d
   - enabled: 1
-    path: Assets/Leon/ConcertHall.unity
+    path: Assets/Leon/ConcertHall/ConcertHall.unity
     guid: c0d4ee8a13c866047b84ce836593e3a9
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a1104fad63a60414c8d5901f9aff6371, type: 2}
