@@ -1,5 +1,7 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace ConcertHallScripts
 {
@@ -17,22 +19,20 @@ namespace ConcertHallScripts
             m_SpotlightDeactivationTimerTwo,
             m_SpotlightDeactivationTimerThree;
 
-        [SerializeField]
-        private int m_AudioTrackNumber;
-
-        private AudioManager m_AudioManager;
         private BoxCollider concertTriggerTwoCollider;
         private BoxCollider concertTriggerThreeCollider;
+        private SceneTransitionManager m_SceneTransitionManager;
+
         private void Awake()
         {
             foreach (GameObject spotLights in m_SpotLights)
             {
                 spotLights.SetActive(false);
             }
-
-            m_AudioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+           
             concertTriggerTwoCollider = GameObject.Find("ConcertTriggerTwo").GetComponent<BoxCollider>();
             concertTriggerThreeCollider = GameObject.Find("ConcertTriggerThree").GetComponent<BoxCollider>();
+            m_SceneTransitionManager = GameObject.Find("GameManager").GetComponent<SceneTransitionManager>();
         }
 
         void Start()
@@ -40,14 +40,19 @@ namespace ConcertHallScripts
             //StartCoroutine(SpotLightActivation());
 
             if (concertTriggerTwoCollider == null)
-            {
                 Debug.Log("Concert Trigger Two is NULL");
-            }
+
 
             if (concertTriggerThreeCollider == null)
-            {
                 Debug.Log("Concert Trigger Two is NULL");
-            }
+
+            if (m_SceneTransitionManager == null)
+                Debug.Log(gameObject.name + " SceneTransitionManager is NULL!");
+            /*
+             
+            PlayAudioTrack(m_AudioTrackNumber);
+            StartCoroutine(SpotLightActivation());
+            */
         }
 
         public void ConcertSetup()
@@ -78,8 +83,9 @@ namespace ConcertHallScripts
 
                 print("Three");
                 m_SpotLights[7].SetActive(false);
-                m_AudioManager.PlayAudioTrack(m_AudioTrackNumber);
+                PlayAudioTrack(m_AudioTrackNumber);
                 StartCoroutine(SpotLightActivation());
+
             }
         }
 
@@ -105,6 +111,7 @@ namespace ConcertHallScripts
                 {
                     m_SpotLights[i].SetActive(true);
                     yield return new WaitForSeconds(m_SpotlightDeactivationTimerThree);
+                    m_SceneTransitionManager.GoToScene();
                 }
 
                 m_SpotLights[i].SetActive(true);
