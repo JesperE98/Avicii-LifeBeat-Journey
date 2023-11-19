@@ -6,17 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Anthony/scenes/Start Menu.unity
-    guid: 1d0d1f1be2a24a34aaea2b1d03383ba5
+    path: Assets/Jesper/Scenes/Start Menu/Start Menu.unity
+    guid: 3e340a9d7edacac44ae7e88039f6eef3
   - enabled: 1
     path: Assets/Anthony/scenes/Avicii room1.2.unity
     guid: 0a1632600a63f4941956bd9547f06db4
   - enabled: 1
-    path: Assets/Leon/Hotel Room.unity
+    path: Assets/Scenes/Hotel Room.unity
     guid: cb471526710227549a36a32924f5283d
   - enabled: 1
-    path: Assets/Leon/ConcertHall.unity
+    path: Assets/Scenes/ConcertHall.unity
     guid: c0d4ee8a13c866047b84ce836593e3a9
+  - enabled: 1
+    path: Assets/Anthony/scenes/Memorial.unity
+    guid: cab721eabec0bd24ebff6d3fad290b3f
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a1104fad63a60414c8d5901f9aff6371, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f642718a3afa9d047b3e68cc5bad8263, type: 2}
