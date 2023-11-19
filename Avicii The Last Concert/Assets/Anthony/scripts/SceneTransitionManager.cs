@@ -19,6 +19,11 @@ public class SceneTransitionManager : MonoBehaviour
         StartCoroutine(GoToSceneRoutine());
     }   
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     // Korutin som hanterar scenövergången
     IEnumerator GoToSceneRoutine()
     {
