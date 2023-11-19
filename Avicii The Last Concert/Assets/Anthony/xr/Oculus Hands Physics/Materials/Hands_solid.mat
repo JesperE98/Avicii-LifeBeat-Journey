@@ -119,7 +119,7 @@ Material:
     - _FadeStart: 0.5
     - _Fresnel: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0.3
     - _GlossinessSource: 0
     - _GlossyReflections: 1
     - _Intensity: 0.5
