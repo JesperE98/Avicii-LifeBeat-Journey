@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Anthony/scenes/DJ-Club 1.unity
     guid: 71f8b87ccbf75c34787dca2fbc2dbf4c
   - enabled: 1
+    path: Assets/Jesper/Scenes/SomeYearsLaterTextScene/SomeYearsLaterTextScene.unity
+    guid: 8505040821f67f640af28704de6f4ed1
+  - enabled: 1
     path: Assets/Jesper/Scenes/Hotel Room/Hotel Room 1.unity
     guid: 2df27a0948019d64bbc1837a2ff20438
   - enabled: 1

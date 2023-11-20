@@ -4,31 +4,22 @@ namespace ConcertHallScripts
 {
     public class ConcertTriggerTwo : MonoBehaviour
     {
-        private AudioManager m_AudioManager;
-        private BoxCollider m_ConcertTriggerTwoCollider;
         private SpotLightActivationRoutine m_SpotLightActivationRoutine;
 
-        private void Awake()
-        {
-            m_AudioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
-            m_ConcertTriggerTwoCollider = GetComponent<BoxCollider>();
-            m_SpotLightActivationRoutine = GameObject.Find("LightShow").GetComponent<SpotLightActivationRoutine>();
-
-        }
+        [SerializeField]
+        private GameObject m_ActivateTrigger;
 
         private void Start()
         {
-            //m_AudioManager.PlayAudioTrack();
-            m_ConcertTriggerTwoCollider.enabled = false;
-
+            m_SpotLightActivationRoutine = GameObject.Find("LightShow").GetComponent<SpotLightActivationRoutine>();
         }
 
         private void OnTriggerEnter(Collider other)
         {
             if (other.tag == "Player")
             {
+                m_ActivateTrigger.SetActive(true);
                 m_SpotLightActivationRoutine.m_ConcertTriggerTwo = true;
-                m_ConcertTriggerTwoCollider.enabled = false;
                 m_SpotLightActivationRoutine.ConcertSetup();
 
             }
