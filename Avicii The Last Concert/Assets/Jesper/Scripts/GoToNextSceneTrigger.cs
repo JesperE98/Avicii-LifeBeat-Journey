@@ -4,7 +4,7 @@ using UnityEngine;
 public class GoToNextSceneTrigger : SceneTransitionManager
 {
     [SerializeField]
-    private float m_Timer;
+    private int m_Timer;
 
     private void OnTriggerEnter(Collider other)
     {
