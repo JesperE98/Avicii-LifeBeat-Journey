@@ -18,6 +18,7 @@ public class Monitor : MonoBehaviour
     [SerializeField] bool Isdestroyed2;
     [SerializeField] bool Isdestroyed3;
     [SerializeField] private bool _phoneCalling;
+
     private AudioSource audioSource;
     private void Start()
     {
@@ -38,9 +39,9 @@ public class Monitor : MonoBehaviour
         {
             if (audioSource != null)
             {
-                audioSource.Play();
-                _phoneCalling = true;
+                audioSource.Play();                
             }
+            _phoneCalling = true;
         }
         
     }
