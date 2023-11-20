@@ -39,7 +39,6 @@ public class Monitor : MonoBehaviour
             if (audioSource != null)
             {
                 audioSource.Play();
-                Debug.Log("telefonen ringer");
                 _phoneCalling = true;
             }
         }
