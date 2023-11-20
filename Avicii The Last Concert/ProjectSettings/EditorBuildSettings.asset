@@ -15,14 +15,14 @@ EditorBuildSettings:
     path: Assets/Anthony/scenes/DJ-Club 1.unity
     guid: 71f8b87ccbf75c34787dca2fbc2dbf4c
   - enabled: 1
-    path: Assets/Scenes/Hotel Room.unity
-    guid: cb471526710227549a36a32924f5283d
+    path: Assets/Jesper/Scenes/Hotel Room/Hotel Room 1.unity
+    guid: 2df27a0948019d64bbc1837a2ff20438
   - enabled: 1
     path: Assets/Jesper/Scenes/Airport/Airport 1.unity
     guid: dc448a9f02e70ff48b5a1a3de6d1bb03
   - enabled: 1
-    path: Assets/Scenes/ConcertHall.unity
-    guid: c0d4ee8a13c866047b84ce836593e3a9
+    path: Assets/Jesper/Scenes/ConcertHall/ConcertHall 1.unity
+    guid: c71000b1df2114342bb50266a9f1d10d
   - enabled: 1
     path: Assets/Anthony/scenes/Memorial.unity
     guid: cab721eabec0bd24ebff6d3fad290b3f

@@ -12,7 +12,6 @@ public class MonitorTwo : SceneTransitionManager
 
     public void StartRoutine()
     {
-        Debug.Log("Hi!");
         StartCoroutine(CountdownToLoadNextScene());
     }
     void Update()

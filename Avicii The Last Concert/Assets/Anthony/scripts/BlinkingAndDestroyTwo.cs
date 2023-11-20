@@ -1,16 +1,17 @@
 using System.Collections;
 using UnityEngine;
 
-public class BlinkingAndDestroy : MonoBehaviour
+public class BlinkingAndDestroyTwo : MonoBehaviour
 {
     public float blinkInterval = 0.5f; // Tidsintervall för blinkning i sekunder
     private Renderer rend;
     private bool isPlayerInRange = false;
 
+    private MonitorTwo m_MonitorTwo;
 
     private void Start()
     {
-
+        m_MonitorTwo = GameObject.Find("Monitor").GetComponent<MonitorTwo>();
         rend = GetComponent<Renderer>();
         StartCoroutine(BlinkAndDestroy());
     }
@@ -20,6 +21,7 @@ public class BlinkingAndDestroy : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
+            m_MonitorTwo.StartRoutine();
         }
     }
 
