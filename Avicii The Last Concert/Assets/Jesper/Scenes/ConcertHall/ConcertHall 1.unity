@@ -1676,6 +1676,108 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DesiredDuration: 500
+--- !u!1001 &229265822
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7029011434543910431}
+    m_Modifications:
+    - target: {fileID: 2931644401745225447, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+--- !u!224 &229265823 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+  m_PrefabInstance: {fileID: 229265822}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &241759178
 GameObject:
   m_ObjectHideFlags: 0
@@ -9937,7 +10039,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1116277167}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3db394bbc220f4440bff609ee9cfa0d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bdcecfd2b71ee242bad62f400b942bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   blinkInterval: 0.5
@@ -10435,7 +10537,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1159475215}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3db394bbc220f4440bff609ee9cfa0d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bdcecfd2b71ee242bad62f400b942bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   blinkInterval: 0.5
@@ -11809,7 +11911,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1316712318}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3db394bbc220f4440bff609ee9cfa0d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bdcecfd2b71ee242bad62f400b942bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   blinkInterval: 0.5
@@ -24175,7 +24277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeScreen: {fileID: 4305753618216629725}
-  m_LoadSceneIndex: 6
+  m_LoadSceneIndex: 7
 --- !u!1 &2353583473096757539
 GameObject:
   m_ObjectHideFlags: 0
@@ -27489,6 +27591,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3551083100305498780}
+  - {fileID: 229265823}
   m_Father: {fileID: 3226975439972585600}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &7029011434543910432
