@@ -4,19 +4,13 @@ namespace ConcertHallScripts
 {
     public class ConcertTriggerThree : MonoBehaviour
     {
-        private BoxCollider m_BoxCollider;
         private SpotLightActivationRoutine m_SpotLightActivationRoutine;
-
-        private void Awake()
-        {
-            m_BoxCollider = GetComponent<BoxCollider>();
-            m_SpotLightActivationRoutine = GameObject.Find("LightShow").GetComponent<SpotLightActivationRoutine>();
-        }
 
         private void Start()
         {
-            m_BoxCollider.enabled = false;
+            m_SpotLightActivationRoutine = GameObject.Find("LightShow").GetComponent<SpotLightActivationRoutine>();
         }
+
 
         private void OnTriggerEnter(Collider other)
         {
