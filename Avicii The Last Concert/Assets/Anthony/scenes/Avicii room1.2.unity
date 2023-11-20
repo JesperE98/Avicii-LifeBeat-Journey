@@ -342,58 +342,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 792096817}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!1 &75468460
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 75468461}
-  - component: {fileID: 75468462}
-  m_Layer: 0
-  m_Name: Monitor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &75468461
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75468460}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &75468462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75468460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7b0e3a009e9a9145b52b14def792e4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  phone: {fileID: 5553770420692401857}
-  button_1: {fileID: 463073521}
-  button_2: {fileID: 140606940}
-  button_3: {fileID: 735779100}
-  Isdestroyed1: 0
-  Isdestroyed2: 0
-  Isdestroyed3: 0
-  _phoneCalling: 0
 --- !u!1 &140606940
 GameObject:
   m_ObjectHideFlags: 0
@@ -4236,7 +4184,6 @@ GameObject:
   - component: {fileID: 1553985750}
   - component: {fileID: 1553985749}
   - component: {fileID: 1553985752}
-  - component: {fileID: 1553985753}
   m_Layer: 0
   m_Name: trigger box3
   m_TagString: Untagged
@@ -4277,6 +4224,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 766706697}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5553770420692401857}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -4381,21 +4340,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1553985753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1553985747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c9147b0f6a6ba546b00c21eeb9b4c05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AudioSources:
-  - {fileID: 9119408836133902410}
-  m_AudioTrackNumber: 0
 --- !u!65 &1638033762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6585,7 +6529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &5826543431068875693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7278,7 +7222,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 54973b6893bd14a4890972f3092d426a, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -7385,7 +7329,6 @@ SceneRoots:
   - {fileID: 792096817}
   - {fileID: 282135028}
   - {fileID: 4210226}
-  - {fileID: 75468461}
   - {fileID: 5272241609245554879}
   - {fileID: 2795564235485195415}
   - {fileID: 1804943536}
