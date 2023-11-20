@@ -6,7 +6,7 @@ public class BlinkingAndDestroy : MonoBehaviour
     public float blinkInterval = 0.5f; // Tidsintervall för blinkning i sekunder
     private Renderer rend;
     private bool isPlayerInRange = false;
-
+    
 
     private void Start()
     {
