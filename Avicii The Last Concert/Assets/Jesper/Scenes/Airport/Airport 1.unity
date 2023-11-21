@@ -24449,26 +24449,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3290501733316566208, guid: fb6dcd3a23623424eab2a3131f495c3f, type: 3}
-      propertyPath: field of view
-      value: 26.991467
-      objectReference: {fileID: 0}
-    - target: {fileID: 3290501733316566208, guid: fb6dcd3a23623424eab2a3131f495c3f, type: 3}
-      propertyPath: m_OcclusionCulling
+    - target: {fileID: 1745518304268852533, guid: fb6dcd3a23623424eab2a3131f495c3f, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3290501733316566208, guid: fb6dcd3a23623424eab2a3131f495c3f, type: 3}
-      propertyPath: m_projectionMatrixMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3290501733316566208, guid: fb6dcd3a23623424eab2a3131f495c3f, type: 3}
-      propertyPath: m_AllowDynamicResolution
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5800144811481977851, guid: fb6dcd3a23623424eab2a3131f495c3f, type: 3}
-      propertyPath: volumeTrigger
-      value: 
-      objectReference: {fileID: 670375713}
     - target: {fileID: 8716362053521290546, guid: fb6dcd3a23623424eab2a3131f495c3f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.671
@@ -24529,11 +24513,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ccfd1f26f0de0f48872f0085c9f9faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &670375713 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7029011435418411160, guid: fb6dcd3a23623424eab2a3131f495c3f, type: 3}
-  m_PrefabInstance: {fileID: 670375711}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &678302150
 GameObject:
   m_ObjectHideFlags: 0

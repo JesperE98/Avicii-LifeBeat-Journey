@@ -649,7 +649,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 26.991467
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -796,7 +796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 0}
+  volumeTrigger: {fileID: 7029011435418411160}
   volumeLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -4304,6 +4304,18 @@ PrefabInstance:
     - target: {fileID: 2931644401745225447, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7629211867378932288, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 3290501733316566208}
+    - target: {fileID: 7927364729028856364, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7927364729028856364, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8361484277506225299, guid: ecbe1a39acc5f874c925adee316f0a3f, type: 3}
       propertyPath: m_Pivot.x
