@@ -30,5 +30,6 @@ EditorBuildSettings:
     path: Assets/Anthony/scenes/Memorial.unity
     guid: cab721eabec0bd24ebff6d3fad290b3f
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5c987add53a13fc4e889344f27c268a8, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a1104fad63a60414c8d5901f9aff6371, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f642718a3afa9d047b3e68cc5bad8263, type: 2}
