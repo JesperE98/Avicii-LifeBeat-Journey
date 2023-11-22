@@ -2,7 +2,7 @@
 
 # Avicii LifeBeat journey
 
-![Avicii Resonance VR]
+
 
 ## Projektets Syfte
 
@@ -25,8 +25,7 @@ Målet är att ge användare en emotionell och interaktiv resa genom nyckelmomen
 5. Installera XR Toolkit för att få tillgång till XR-rigens system.
 6. Bygg projektet och starta upplevelsen.
 
-## Kodstruktur och Praxis
-Se till att göra en egen mapp med ditt namn, och varje script ska ha namespace
+
 ### Mappstruktur
 
 - `/Assets`: Huvudmappen för alla projektets assets och resurser.
