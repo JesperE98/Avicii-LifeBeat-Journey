@@ -136,10 +136,8 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: 0.0.8
-  preloadedAssets:
-  - {fileID: 8475560644809795387, guid: a1104fad63a60414c8d5901f9aff6371, type: 2}
-  - {fileID: -7804110256584728873, guid: f642718a3afa9d047b3e68cc5bad8263, type: 2}
+  bundleVersion: 1.0.0
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -161,6 +159,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.DefaultCompany.AviciiTheLastConcert
+    Standalone: com.DefaultCompany.Avicii-The-Last-Concert
   buildNumber:
     Standalone: 0
     VisionOS: 0
